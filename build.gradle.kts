@@ -16,11 +16,21 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+    implementation("org.springframework.boot:spring-boot-starter-web:2.7.3")
+
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+    testImplementation("org.springframework.boot:spring-boot-starter-test:2.7.3")
+
+    // Remember to add this for cucumber
+    // https://thecodinganalyst.github.io/knowledgebase/No-tests-found-when-running-cucumber-junit/
+    testImplementation ("org.junit.vintage:junit-vintage-engine:5.9.0")
+
+    testImplementation("io.mockk:mockk:1.12.7")
+    testImplementation ("io.cucumber:cucumber-java:7.6.0")
+    testImplementation ("io.cucumber:cucumber-spring:7.6.0")
+    testImplementation ("io.cucumber:cucumber-junit:7.6.0")
 }
 
 tasks.withType<KotlinCompile> {
