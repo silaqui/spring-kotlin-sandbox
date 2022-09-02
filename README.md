@@ -1,4 +1,4 @@
-# Spring sandbox
+# Spring Sandbox
 
 Spring app with common features for copy-paste for new app setup or use as cheatsheet.
 
@@ -20,7 +20,7 @@ Spring app with common features for copy-paste for new app setup or use as cheat
 
 - Docker
 
-- Swagger
+- [x] Swagger
 
 - [x] Cucumber
 - [x] Mockito
@@ -30,6 +30,22 @@ Spring app with common features for copy-paste for new app setup or use as cheat
 ---
 
 ### Add some flavor with domain problem - ideas:
+
 - Apiary manager
 - Hotel management app
-- Train connections or something with scheduling/planing optimizations 
+- Train connections or something with scheduling/planing optimizations
+
+---
+
+### Open API / Swagger
+
+Reference article:
+
+* https://www.baeldung.com/kotlin/swagger-spring-rest-api
+* https://www.dariawan.com/tutorials/spring/documenting-spring-boot-rest-api-springdoc-openapi-3/
+
+Documentation:
+
+http://localhost:8080/swagger-ui/index.html
+
+---
