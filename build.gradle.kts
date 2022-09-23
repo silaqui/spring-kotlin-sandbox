@@ -31,10 +31,10 @@ dependencies {
     // https://thecodinganalyst.github.io/knowledgebase/No-tests-found-when-running-cucumber-junit/
     testImplementation("org.junit.vintage:junit-vintage-engine:5.9.0")
 
-    testImplementation("io.mockk:mockk:1.12.7")
-    testImplementation("io.cucumber:cucumber-java:7.6.0")
-    testImplementation("io.cucumber:cucumber-spring:7.6.0")
-    testImplementation ("io.cucumber:cucumber-junit:7.6.0")
+    testImplementation("io.mockk:mockk:1.12.8")
+    testImplementation("io.cucumber:cucumber-java:7.8.0")
+    testImplementation("io.cucumber:cucumber-spring:7.8.0")
+    testImplementation("io.cucumber:cucumber-junit:7.8.0")
 }
 
 tasks.withType<KotlinCompile> {
