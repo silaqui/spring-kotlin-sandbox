@@ -4,13 +4,16 @@ import javax.persistence.*
 
 @Entity
 data class Parent(
+
     @Id
     @GeneratedValue
-    var id: Int? = null,
-    var name: String = "",
+    val id: Int? = null,
+
+    val name: String,
+
     @OneToMany(cascade = [CascadeType.ALL], fetch = FetchType.EAGER)
     @JoinColumn(name = "parent_id")
-    var children: List<Child> = listOf(),
+    val children: List<Child> = emptyList(),
 ) {
     override fun toString() = "{name: ${this.name}, children: ${children.map { it.name }}}"
 }
