@@ -55,3 +55,7 @@ http://localhost:8080/swagger-ui/index.html
 Reference article:
 
 https://www.baeldung.com/spring-boot-h2-database
+
+### Spring Event
+
+youtube.com/watch?v=heilrp4Foww
