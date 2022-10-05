@@ -4,9 +4,13 @@ import io.swagger.v3.oas.annotations.Operation
 import io.swagger.v3.oas.annotations.responses.ApiResponse
 import io.swagger.v3.oas.annotations.responses.ApiResponses
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
+const val HEALTH_API = "/health"
+
 @RestController
+@RequestMapping(HEALTH_API)
 class HealthController {
 
     @Operation(
@@ -18,7 +22,7 @@ class HealthController {
             ApiResponse(responseCode = "200", description = "Successful Operation"),
         ]
     )
-    @GetMapping("/health")
+    @GetMapping
     fun health(): String {
         return "OK"
     }

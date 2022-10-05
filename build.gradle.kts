@@ -20,6 +20,9 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web:2.7.4")
     implementation("org.springframework.boot:spring-boot-starter-data-jpa:2.7.4")
     implementation("org.springframework.boot:spring-boot-starter-security:2.7.4")
+    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor:2.7.4")
+
+    implementation("io.jsonwebtoken:jjwt:0.9.1")
 
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
@@ -36,7 +39,7 @@ dependencies {
     // https://thecodinganalyst.github.io/knowledgebase/No-tests-found-when-running-cucumber-junit/
     testImplementation("org.junit.vintage:junit-vintage-engine:5.9.0")
 
-    testImplementation("io.mockk:mockk:1.12.8")
+    testImplementation("io.mockk:mockk:1.13.2")
     testImplementation("io.cucumber:cucumber-java:7.8.0")
     testImplementation("io.cucumber:cucumber-spring:7.8.0")
     testImplementation("io.cucumber:cucumber-junit:7.8.0")

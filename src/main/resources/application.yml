@@ -6,4 +6,5 @@ spring:
       hibernate:
         hbm2ddl:
           auto: create
-
+jwt-security:
+  signing-key: "SECRET"
