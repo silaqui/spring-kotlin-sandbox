@@ -4,9 +4,9 @@ Spring app with common features for copy-paste for new app setup or use as cheat
 
 ---
 
-- [x] Rest API 
+- [x] Rest API
 
-- Database - H2 or stand alone - one-to-many relations
+- [x] Database - H2 or stand alone - one-to-many relations
 - Flyway
 
 - Spring security - token, roles, groups
@@ -49,3 +49,9 @@ Documentation:
 http://localhost:8080/swagger-ui/index.html
 
 ---
+
+### H2
+
+Reference article:
+
+https://www.baeldung.com/spring-boot-h2-database
