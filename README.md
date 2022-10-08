@@ -56,6 +56,14 @@ Reference article:
 
 https://www.baeldung.com/spring-boot-h2-database
 
+### JPA
+
+Reference article:
+
+https://www.jpa-buddy.com/blog/best-practices-and-common-pitfalls/
+
+---
+
 ### Spring Event
 
 youtube.com/watch?v=heilrp4Foww
